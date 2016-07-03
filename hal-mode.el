@@ -41,7 +41,7 @@
                    "newpin" "newcomp" "sete" "newinst" "stop"
                    "newg" "newsig" "ready" "net" "log" "newthread")))
   '(;;("\\(#<_?[A-Za-z0-9_]+>\\)" (1 font-lock-type-face))
-    ("[[:space:]=]+?\\([0-9]+\\(?:\\.?[0-9]+\\)?\\)" (1 font-lock-constant-face))
+    ("[[:space:]=]+?\\(-?[0-9]+\\(?:\\.?[0-9]+\\)?\\)" (1 font-lock-constant-face))
     ("[[:space:]]+?\\(FALSE\\|TRUE\\)" (1 font-lock-constant-face))
     ("\\(\\[[0-9a-zA-Z_]*\\][0-9a-zA-Z_]+\\)" (1 font-lock-variable-name-face))
     ("[[:space:]]+?\\(u32\\|s32\\|int\\|bit\\|float\\)" (1 font-lock-type-face)))
