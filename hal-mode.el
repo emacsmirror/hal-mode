@@ -3,7 +3,6 @@
 ;; Author: Alexander Rössler
 ;; URL: https://github.com/strahlex/hal-mode/
 ;; Version: 0.1
-;; Package-Requires: ((generic-x "19.0"))
 ;; Keywords: language
 
 ;; Copyright (C) 2016 Alexander Rössler
@@ -33,6 +32,7 @@
 
 (require 'generic-x)
 
+;;;###autoload
 (define-generic-mode hal-generic-mode
   '("#")
   (apply 'append
@@ -55,6 +55,7 @@
   "Generic mode for HAL files.")
 
 ;; disable electric indent
-(add-hook 'hal-generic-mode-hook (lambda () (electric-indent-local-mode -1)))
+(add-hook 'hal-generic-mode-hook (lambda () (setq electric-indent-inhibit t)))
 
 (provide 'hal-mode)
+;;; hal-mode.el ends here
